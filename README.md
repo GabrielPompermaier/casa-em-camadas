@@ -1,13 +1,13 @@
 # Casa em Camadas
 
-Blog estático de decoração desenvolvido para a AOP2. A Home apresenta os guias de Sala de Estar, Quartos e Cozinha. O menu também dá acesso à página Contatos.
+Blog de decoração criado para a AOP2. A página inicial reúne três guias ilustrados sobre a organização e a decoração da sala de estar, dos quartos e da cozinha. A página Contatos indica onde enviar dúvidas e sugestões.
 
-## Visualização
+[Visitar o blog](https://gabrielpompermaier.github.io/casa-em-camadas/)
 
-Abra `index.html` no navegador. As páginas, a folha de estilos e as ilustrações SVG estão na raiz deste repositório. O blog não requer instalação nem compilação.
+## Arquivos do projeto
 
-## Publicação
-
-No GitHub, vá a **Settings → Pages**. Selecione **Deploy from a branch**, a branch **main** e a pasta **/(root)**. Em **Settings → General → Features**, mantenha **Issues** ativado para receber sugestões da página Contatos.
-
-As ilustrações SVG fazem parte do código do projeto.
+- `index.html` — página inicial com os destaques.
+- `sala.html`, `quartos.html` e `cozinha.html` — guias de decoração.
+- `contatos.html` — página de contato.
+- `estilo.css` — estilos compartilhados pelas páginas.
+- `sala.svg`, `quartos.svg` e `cozinha.svg` — ilustrações dos ambientes.
