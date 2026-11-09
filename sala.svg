@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 368">
+<rect width="660" height="368" fill="#e5ba9e"/><path d="M0 282h660v86H0z" fill="#d3a180"/>
+    <rect x="438" y="40" width="170" height="182" rx="85" fill="#f7e8c8"/>
+    <path d="M523 40v182M438 142h170" stroke="#c0906e" stroke-width="5"/>
+    <path d="M44 295h610" stroke="#ad7658" stroke-width="3"/>
+    <ellipse cx="333" cy="330" rx="256" ry="30" fill="#b98668"/>
+    <rect x="115" y="145" width="338" height="142" rx="29" fill="#9a4e36"/>
+    <path d="M133 267v32m300-32v32" stroke="#5a382b" stroke-width="10"/>
+    <rect x="105" y="205" width="362" height="68" rx="19" fill="#b96245"/>
+    <rect x="127" y="163" width="68" height="65" rx="10" fill="#e4a476" transform="rotate(-10 161 195)"/>
+    <rect x="207" y="170" width="62" height="62" rx="10" fill="#e5cba0" transform="rotate(9 238 201)"/>
+    <ellipse cx="340" cy="291" rx="94" ry="23" fill="#82573c"/>
+    <path d="M287 302l-8 41m113-41 8 41" stroke="#674330" stroke-width="8"/>
+    <path d="M549 264q-9-58-43-96 47 0 46 65 3-70 53-89-1 52-49 93 21-26 53-25-12 31-52 44" fill="#516349"/>
+    <path d="M525 260h57l-10 49h-36z" fill="#8d5940"/>
+    <path d="M63 267V112" stroke="#634531" stroke-width="5"/><path d="M28 118l14-45h43l15 45z" fill="#f7e8c8"/>
+    
+</svg>

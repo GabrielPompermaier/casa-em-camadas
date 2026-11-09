@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Envie sugestões e dúvidas para o blog Casa em Camadas.">
+  <title>Contatos | Casa em Camadas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir ao conteúdo</a>
+  <header class="topo">
+    <div class="limite topo-interno">
+      <a class="marca" href="index.html"><span aria-hidden="true">✳</span> Casa em Camadas</a>
+      <nav aria-label="Menu principal"><a href="index.html">Home</a><a href="sala.html">Sala de Estar</a><a href="quartos.html">Quartos</a><a href="cozinha.html">Cozinha</a><a href="contatos.html" aria-current="page">Contatos</a></nav>
+    </div>
+  </header>
+  <main id="conteudo" class="limite">
+
+  <section class="guia contato">
+    <a class="voltar" href="index.html">← Voltar à Home</a>
+    <header class="guia-topo"><p class="etiqueta">FALE COM O BLOG</p><h1>Contatos</h1><p>Tem uma dúvida de decoração ou quer sugerir um tema para o próximo guia?</p></header>
+    <div class="pratica">
+      <h2>Sugestões e dúvidas</h2>
+      <p>Abra uma publicação na área <strong>Issues</strong> do repositório no GitHub. Conte qual ambiente você quer decorar e descreva o que gostaria de mudar.</p>
+      <a class="botao" id="canal" hidden>Enviar sugestão pelo GitHub <span aria-hidden="true">↗</span></a>
+      <p id="canal-ajuda">Na versão publicada no GitHub Pages, o botão de contato leva à área de sugestões do projeto.</p>
+    </div>
+    <p class="credito">Projeto acadêmico de Gabriel Pompermaier Simôr Nogueira.</p>
+  </section>
+  <script>
+    const endereco = window.location;
+    const conta = endereco.hostname.match(/^([a-z0-9-]+)\.github\.io$/i);
+    const projeto = endereco.pathname.split('/')[1];
+    if (conta && /^[a-z0-9_.-]+$/i.test(projeto) && !projeto.endsWith('.html')) {
+      const canal = document.getElementById('canal');
+      canal.href = 'https://github.com/' + conta[1] + '/' + projeto + '/issues/new';
+      canal.hidden = false;
+      document.getElementById('canal-ajuda').hidden = true;
+    }
+  </script>
+  </main>
+  <footer class="rodape">
+    <div class="limite rodape-interno"><strong>Casa em Camadas</strong><span>Blog de decoração · AOP2 · 2026</span><a href="contatos.html">Contatos</a></div>
+  </footer>
+</body>
+</html>

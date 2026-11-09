@@ -1,0 +1,58 @@
+:root{color-scheme:light;--fundo:#f9f5ed;--papel:#fffdf8;--tinta:#30271f;--suave:#665648;--linha:#dfd0c1;--acento:#884027;--claro:#f2e7d8;--verde:#384a36}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:1rem/1.62 system-ui,sans-serif}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3,.marca{font-family:Georgia,serif;line-height:1.05}
+h1{font-size:clamp(2.8rem,5.8vw,5.4rem);font-weight:400;letter-spacing:-.055em}
+h2{font-size:clamp(1.9rem,3.4vw,3rem);font-weight:400;letter-spacing:-.04em}
+h3{font-size:1.8rem;font-weight:400;letter-spacing:-.03em}
+a{color:inherit}
+a:focus-visible{outline:3px solid #96401f;outline-offset:4px}
+[hidden]{display:none!important}
+img{display:block;width:100%;height:auto}
+.limite{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+.topo{border-bottom:1px solid var(--linha);background:var(--papel)}
+.topo-interno,.rodape-interno{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:76px}
+.marca{font-size:1.45rem;text-decoration:none;font-weight:bold;white-space:nowrap}
+.marca span,.etiqueta span{color:var(--acento)}
+nav{display:flex;gap:clamp(.3rem,2vw,1.5rem);flex-wrap:wrap}
+nav a{font-size:.9rem;text-decoration:none;padding:.35rem .25rem}
+nav a:hover,nav a[aria-current=page]{color:var(--acento);text-decoration:underline;text-underline-offset:.4rem}
+.skip{position:absolute;left:10px;top:10px;transform:translateY(-150%);background:var(--papel);padding:.5rem 1rem;z-index:1}
+.skip:focus{transform:none}
+.abertura{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(25px,5vw,72px);padding:clamp(40px,7vw,92px) 0}
+.abertura h1{margin:.35em 0 .25em}
+.abertura h1 em{display:block;color:var(--acento)}
+.abertura-texto>p:not(.etiqueta),.guia-topo>p:not(.etiqueta){max-width:53ch;color:var(--suave);font-size:1.07rem}
+.etiqueta{font-size:.73rem;font-weight:750;letter-spacing:.15em;color:var(--acento)}
+.botao{display:inline-flex;align-items:center;gap:1rem;background:var(--verde);color:white;text-decoration:none;padding:.7rem 1.15rem;border-radius:2rem;font-weight:650;margin-top:1.5rem}
+.botao:hover{background:#243723}
+.abertura-arte{overflow:hidden;border-radius:120px 120px 14px 14px;background:#e5ba9e;border:1px solid var(--linha)}
+.abertura-arte img{aspect-ratio:1.34;object-fit:cover}
+.abertura-arte figcaption{padding:.65rem 1rem;background:var(--papel);font-size:.7rem;letter-spacing:.16em;font-weight:700}
+.destaques{padding:2rem 0 4.5rem;border-top:1px solid var(--linha)}
+.linha-titulo{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:1.35rem}
+.linha-titulo h2,.guia-topo h1{margin-top:.28em}
+.linha-titulo>p,.cartao-texto>p:not(.etiqueta),.dica>p:not(.etiqueta){color:var(--suave)}
+.grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2.3vw,26px)}
+.cartao,.dica{border:1px solid var(--linha);border-radius:14px;background:var(--papel)}
+.foto-link{display:block;overflow:hidden;border-radius:13px 13px 0 0}
+.foto-link img{transition:transform .2s}
+.foto-link:hover img{transform:scale(1.04)}
+.cartao-texto,.dica{padding:1.15rem}
+.cartao h3{margin:.3rem 0 .7rem}
+.cartao h3 a{text-decoration:none}
+.seta,.voltar{display:inline-block;color:var(--acento);font-size:.9rem;font-weight:700;margin-top:.85rem;text-underline-offset:.2rem}
+.guia{padding:2.1rem 0 4rem}
+.guia-topo{margin:1.45rem 0 1.65rem}
+.guia-topo h1{font-size:clamp(2.6rem,6.2vw,5rem);margin-bottom:.19em}
+.guia-arte{border-radius:16px;overflow:hidden;background:var(--claro);margin-bottom:1.6rem}
+.guia-arte img{max-height:400px;object-fit:contain}
+.dica h2{font-size:1.65rem;margin:.35rem 0 .65rem}
+.pratica{padding:1.3rem 1.5rem;margin-top:1.6rem;border-left:4px solid var(--acento);background:var(--claro)}
+.pratica p+p,.pratica h2+p,.credito{margin-top:.65rem}
+.contato{max-width:760px;min-height:65vh}
+.rodape{border-top:1px solid var(--linha);background:var(--papel);color:var(--suave)}
+.rodape-interno{font-size:.88rem;flex-wrap:wrap;padding:1rem 0}
+@media(max-width:760px){.limite{width:calc(100% - 32px)}.topo-interno{align-items:flex-start;flex-direction:column;gap:.4rem;padding:.9rem 0}.abertura{grid-template-columns:1fr}.abertura-arte{border-radius:50px 50px 12px 12px}.abertura-arte img{aspect-ratio:1.75}.linha-titulo{align-items:start;flex-direction:column}.grade{grid-template-columns:1fr}.cartao-texto,.dica{padding:1.2rem}}
+@media(prefers-reduced-motion:reduce){.foto-link img{transition:none}}
